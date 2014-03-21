@@ -107,8 +107,18 @@
     [contentScrollView addSubview:urlButton];
     urlButton.enabled = self.place.URL != nil;
     
+    NSMutableAttributedString* openingTimes = [NSMutableAttributedString new];
+    [openingTimes appendAttributedString:[[NSAttributedString alloc] initWithString:NSLocalizedString(@"Opening Times\n\n", nil) attributes:@{ NSFontAttributeName: [BBUAppStyle boldLabelFont] }]];
+    [openingTimes appendAttributedString:[[NSAttributedString alloc] initWithString:self.place.openingTimes attributes:@{ NSFontAttributeName: [BBUAppStyle labelFont] }]];
+    
+    UILabel* openingTimesLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, CGRectGetMaxY(addressButton.frame) + 20.0, self.view.width - 20.0, 500.0)];
+    openingTimesLabel.numberOfLines = 0;
+    openingTimesLabel.attributedText = openingTimes;
+    [openingTimesLabel sizeToFit];
+    [contentScrollView addSubview:openingTimesLabel];
+    
     contentScrollView.contentSize = CGSizeMake(contentScrollView.width,
-                                               CGRectGetMaxY(addressButton.frame) + 10.0);
+                                               CGRectGetMaxY(openingTimesLabel.frame) + 10.0);
 }
 
 #pragma mark - Actions
@@ -130,9 +140,5 @@
     BBUWebViewController* webViewController = [[BBUWebViewController alloc] initWithURL:self.place.URL];
     [self.navigationController pushViewController:webViewController animated:YES];
 }
-
-/*
- ▶Opening times ✱  ABC
- */
 
 @end

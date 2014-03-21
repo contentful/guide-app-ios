@@ -13,6 +13,7 @@
 @property (readonly) CLLocationCoordinate2D address;
 @property (readonly) NSString* email;
 @property (readonly) NSString* name;
+@property (readonly) NSString* openingTimes;
 @property (readonly) NSString* phoneNumber;
 @property (readonly) NSString* placeDescription;
 @property (readonly) NSUInteger rating;

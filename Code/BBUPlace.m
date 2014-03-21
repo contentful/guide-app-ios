@@ -40,6 +40,10 @@
     return self.fields[@"name"];
 }
 
+-(NSString *)openingTimes {
+    return self.fields[@"openingTimes"];
+}
+
 -(NSString *)phoneNumber {
     return self.fields[@"phoneNumber"];
 }
