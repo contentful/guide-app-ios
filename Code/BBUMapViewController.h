@@ -12,6 +12,9 @@
 
 @interface BBUMapViewController : UIViewController
 
+@property (nonatomic) NSArray* places;
+
 -(id)initWithPlace:(BBUPlace*)place;
+-(id)initWithPlaces:(NSArray*)places;
 
 @end

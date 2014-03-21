@@ -23,10 +23,12 @@ PODS:
     - ISO8601DateFormatter
   - CPDAcknowledgements (0.0.1)
   - ISO8601DateFormatter (0.7)
+  - PDKTCollectionViewWaterfallLayout (0.1)
 
 DEPENDENCIES:
   - ContentfulDeliveryAPI (from `https://github.com/contentful/contentful.objc.git`)
   - CPDAcknowledgements (from `https://github.com/CocoaPods/CPDAcknowledgements`)
+  - PDKTCollectionViewWaterfallLayout
 
 EXTERNAL SOURCES:
   ContentfulDeliveryAPI:
@@ -39,5 +41,6 @@ SPEC CHECKSUMS:
   ContentfulDeliveryAPI: 02e21648138ea540e483c5d5973adc780905e373
   CPDAcknowledgements: f3a53db929c2abb1a2cdc4b37a630ba0eeec8209
   ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
+  PDKTCollectionViewWaterfallLayout: be8dd399763b9b925aa78dff0f788e0221e72c54
 
 COCOAPODS: 0.29.0

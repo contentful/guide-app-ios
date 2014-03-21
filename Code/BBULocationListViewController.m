@@ -32,6 +32,7 @@
         self.title = NSLocalizedString(@"Places", nil);
         
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"thanks_small"] style:UIBarButtonItemStyleBordered target:self action:@selector(thanksTapped)];
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"contentful_logo_small"]]];
         self.tabBarItem.image = [UIImage imageNamed:@"coffeecup_small"];
     }
     return self;
