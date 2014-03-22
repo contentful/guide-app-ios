@@ -124,7 +124,7 @@
 #pragma mark - Actions
 
 -(void)emailTapped {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto://" stringByAppendingString:self.place.phoneNumber]]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[@"mailto://" stringByAppendingString:self.place.email]]];
 }
 
 -(void)mapTapped {
