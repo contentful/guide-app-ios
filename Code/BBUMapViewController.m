@@ -22,6 +22,18 @@
 
 @implementation BBUMapViewController
 
+-(void)adjustMapRectToAnnotations {
+    MKMapRect zoomRect = MKMapRectNull;
+    
+    for (id <MKAnnotation> annotation in self.mapView.annotations) {
+        MKMapPoint annotationPoint = MKMapPointForCoordinate(annotation.coordinate);
+        MKMapRect pointRect = MKMapRectMake(annotationPoint.x, annotationPoint.y, 0.1, 0.1);
+        zoomRect = MKMapRectUnion(zoomRect, pointRect);
+    }
+    
+    [self.mapView setVisibleMapRect:zoomRect animated:YES];
+}
+
 -(id)initWithPlace:(BBUPlace*)place {
     self = [self initWithPlaces:@[ place ]];
     if (self) {
@@ -48,6 +60,7 @@
     
     [self.mapView addAnnotations:self.places];
     [self.mapView setCenterCoordinate:[[self.places firstObject] coordinate] animated:YES];
+    [self adjustMapRectToAnnotations];
 }
 
 -(void)viewDidLoad {
@@ -68,6 +81,8 @@
     if (self.places.count == 1) {
         [self.mapView setSelectedAnnotations:@[ [self.places firstObject] ]];
     }
+    
+    [self adjustMapRectToAnnotations];
 }
 
 #pragma mark - MKMapViewDelegate
