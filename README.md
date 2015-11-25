@@ -3,8 +3,6 @@
 A generic app for shop guides, styled as a guide to Coffee places.
 Supports iOS 7 and uses [Contentful][1] as CMS for the guides.
 
-**This app was made during an internal hackathon and is not officially supported.**
-
 ### Screenshots
 
 ![Menu](Screenshots/menu.png) ![Menu](Screenshots/details.png) ![Menu](Screenshots/more_details.png) ![Menu](Screenshots/map.png) ![Menu](Screenshots/pictures.png)
