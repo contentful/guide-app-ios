@@ -1,44 +1,52 @@
 PODS:
-  - AFNetworking (2.2.1):
-    - AFNetworking/NSURLConnection
-    - AFNetworking/NSURLSession
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-    - AFNetworking/UIKit
-  - AFNetworking/NSURLConnection (2.2.1):
+  - AFNetworking/NSURLSession (2.5.4):
     - AFNetworking/Reachability
     - AFNetworking/Security
     - AFNetworking/Serialization
-  - AFNetworking/NSURLSession (2.2.1):
-    - AFNetworking/NSURLConnection
-  - AFNetworking/Reachability (2.2.1)
-  - AFNetworking/Security (2.2.1)
-  - AFNetworking/Serialization (2.2.1)
-  - AFNetworking/UIKit (2.2.1):
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - ContentfulDeliveryAPI (0.8.0):
-    - AFNetworking
+  - ContentfulDeliveryAPI (1.9.2):
+    - AFNetworking (~> 2.5.3)
     - ISO8601DateFormatter
   - CPDAcknowledgements (0.0.1)
   - ISO8601DateFormatter (0.7)
   - PDKTCollectionViewWaterfallLayout (0.1)
 
 DEPENDENCIES:
-  - ContentfulDeliveryAPI
+  - AFNetworking
+  - ContentfulDeliveryAPI (~> 1.9.0)
   - CPDAcknowledgements (from `https://github.com/CocoaPods/CPDAcknowledgements`)
-  - PDKTCollectionViewWaterfallLayout
+  - PDKTCollectionViewWaterfallLayout (~> 0.1)
 
 EXTERNAL SOURCES:
   CPDAcknowledgements:
     :git: https://github.com/CocoaPods/CPDAcknowledgements
 
-SPEC CHECKSUMS:
-  AFNetworking: 0121f4b69be3fa58d1ab317866e036e12ac9651d
-  ContentfulDeliveryAPI: a4d858c048dc0ebad6996416b163c93f1ed653e5
-  CPDAcknowledgements: f3a53db929c2abb1a2cdc4b37a630ba0eeec8209
-  ISO8601DateFormatter: 00944e437ea647f4244454ce8809d313861d08de
-  PDKTCollectionViewWaterfallLayout: be8dd399763b9b925aa78dff0f788e0221e72c54
+CHECKOUT OPTIONS:
+  CPDAcknowledgements:
+    :commit: 7fbdf851a88be513a6c7990622490d354b8ba854
+    :git: https://github.com/CocoaPods/CPDAcknowledgements
 
-COCOAPODS: 0.31.1
+SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  ContentfulDeliveryAPI: ed7a6c7e06a9ed4206714ab483749fe245765369
+  CPDAcknowledgements: 4036ed018bfe2d226a7e7ad4a23d9757cc9c59cc
+  ISO8601DateFormatter: ab926648eebe497f4d167c0fd083992f959f1274
+  PDKTCollectionViewWaterfallLayout: a246de22e843bdb2677ab2fe5d6c1fb0a623f93e
+
+COCOAPODS: 0.39.0

@@ -92,7 +92,7 @@
         return;
     }
     
-    BBULocationViewController* locationViewController = [[BBULocationViewController alloc] initWithPlace:view.annotation];
+    BBULocationViewController* locationViewController = [[BBULocationViewController alloc] initWithPlace:(BBUPlace*)view.annotation];
     [self.navigationController pushViewController:locationViewController animated:YES];
 }
 
