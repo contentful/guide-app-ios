@@ -1,3 +1,10 @@
+plugin 'cocoapods-keys', {
+  :project => 'Guide',
+  :keys => [
+    'GuideSpaceId',
+    'GuideAccesToken'
+  ]}
+
 platform :ios, "7.0"
 
 pod 'ContentfulDeliveryAPI', '~> 1.9.0'
