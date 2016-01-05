@@ -10,7 +10,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.3.8)
+    addressable (2.4.0)
     claide (0.9.1)
     cocoapods (0.39.0)
       activesupport (>= 4.0.2)
@@ -44,13 +44,13 @@ GEM
       netrc (= 0.7.8)
     cocoapods-try (0.5.1)
     colored (1.2)
-    contentful (0.7.0)
+    contentful (0.8.0)
       http (~> 0.8)
       multi_json (~> 1)
-    contentful-management (0.7.2)
+    contentful-management (0.7.3)
       http (~> 0.8)
       multi_json (~> 1)
-    contentful_bootstrap (2.0.2)
+    contentful_bootstrap (3.0.0)
       contentful (~> 0.7)
       contentful-management
       inifile
@@ -75,7 +75,7 @@ GEM
     launchy (2.4.3)
       addressable (~> 2.3)
     minitest (5.8.3)
-    molinillo (0.4.0)
+    molinillo (0.4.1)
     multi_json (1.11.2)
     nap (1.0.0)
     netrc (0.7.8)
@@ -92,7 +92,7 @@ GEM
       activesupport (>= 3)
       claide (~> 0.9.1)
       colored (~> 1.2)
-    xcpretty (0.2.1)
+    xcpretty (0.2.2)
       rouge (~> 1.8)
 
 PLATFORMS
@@ -101,8 +101,8 @@ PLATFORMS
 DEPENDENCIES
   cocoapods
   cocoapods-keys
-  contentful_bootstrap
+  contentful_bootstrap (~> 3.0.0)
   xcpretty
 
 BUNDLED WITH
-   1.10.6
+   1.11.0
